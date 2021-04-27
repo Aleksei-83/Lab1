@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="Ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 7. Antokhin-Aleksei</title>
+        <link rel="stylesheet" href="styles/good.css">
+    </head>
+    <body>
+        <div id="buttons"> 
+            <input id="Format" class="mainButton" type="button" value="Format" OnClick="Format();"> <br><br>
+            <input id="Cancel" class="mainButton" type="button" value="Cancel" OnClick="Cancel();"> <br>
+        </div>
+
+        <h1 class="OutH1" onMouseOver="this.className='OverH1'" onMouseOut="this.className='OutH1'">Ход Королевы</h1>
+
+        <div id="block">
+            <p id="P1" class="blockP" onMouseOver="changeP1Over()" onMouseOut="changeP1Out()">
+                «Ход королевы» — американский драматический мини-сериал, основанный на одноимённом романе Уолтера Тевиса. Создан Скоттом Фрэнком и Алланом Скоттом по заказу Netflix. Премьера на Netflix состоялась 23 октября 2020 года..
+            </p>
+            <p id="P2" class="blockP">
+                «Ход королевы» рассказывает историю шахматного вундеркинда-сироты Бет Хармон, которая стремится стать величайшей шахматисткой мира, но при этом борется с эмоциональными проблемами, а также с наркотической и алкогольной зависимостью. Действие сериала, названного в оригинале в честь шахматного дебюта, начинается в середине 1950-х годов и продолжается до 1960-x.
+            </p>
+        </div>
+        <div id="P3" class="P3Out" onMouseOver="changeP3Over()" onMouseOut="changeP3Out()">
+            <p>
+                Сериал завоевал две премии «Золотой глобус», в номинациях «Лучший мини-сериал или телефильм» и «Лучшая актриса в мини-сериале или телефильме» (Тейлор-Джой). Тейлор-Джой также выиграла премию «Выбор телевизионных критиков» в категории «Лучшая актриса в телефильме или мини-сериале» и удостоилась номинации на премию Гильдии киноактёров США за лучшую женскую роль в телефильме или мини-сериале.
+            </p>
+        </div>
+
+        <div id="table">
+            <table>
+                <tr>
+                    <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+                    <td class="chet" onMouseOver="this.className='chet2'" onMouseOut="this.className='chet'"></td>
+                    <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+                </tr>
+                <tr>
+                    <td class="chet" onMouseOver="this.className='chet2'" onMouseOut="this.className='chet'"></td>
+                    <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+                    <td class="chet" onMouseOver="this.className='chet2'" onMouseOut="this.className='chet'"></td>
+                </tr>
+                <tr>
+                    <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+                    <td class="chet" onMouseOver="this.className='chet2'" onMouseOut="this.className='chet'"></td>
+                    <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+            </table>
+        </div>
+
+        <div class="images">
+            <img id="i1" class="visible" src="Poster.jpg" alt="Image 1">
+            <img id="i2" class="visible" OnClick="unvisible()" src="2.jpg" alt="Image 2">
+            <img id="i3" class="visible" src="1.jpg" alt="Image 3">
+            <div id="buttons"> 
+                <input id="unvisible" class="mainButton2" type="button" value="Невидимый средний слой" OnClick="unvisible();"> <br>
+                <input id="visible" class="mainButton2" type="button" value="Видимый средний слой" OnClick="visible();"> <br>
+                <input id="navigator" class="mainButton2" type="button" value="Перестановка 1 и 3 слой " OnClick="changeImages();"> <br>
+            </div>
+        </div> 
+    </body>
+
+    <script>
+
+
+        function Format() {
+            P2.className = 'formatP2';
+        }
+        function Cancel() {
+            P2.className = 'blockP';
+        }
+        function changeP1Over() {
+            P1.className = 'P1Over';
+        }
+        function changeP1Out() {
+            P1.className = 'blockP';
+        }
+        function changeP3Over() {
+            P3.className = 'P3Over';
+        }
+        function changeP3Out() {
+            P3.className = 'P3Out';
+        }
+        function unvisible() {
+            i2.className = "unvisible";
+        }
+        function visible() {
+            i2.className = "visible";
+        }
+        
+    let flagChangeImages = 1;
+    /*function changeImages() {
+        if (flagChangeImages) {
+            i1.src = '1.jpg';
+            i3.src = 'Poster.jpg';
+            flagChangeImages = 0;
+        } else {
+            i1.src = 'Poster.jpg';
+            i3.src = '1.jpg';
+            flagChangeImages = 1;
+        }
+    }*/
+
+    i1.className = "ChangeZi3";
+    i3.className = "ChangeZi1";
+    
+    function changeImages() {
+        if (flagChangeImages) {
+            i1.className = "ChangeZi1";
+            i3.className = "ChangeZi3";
+            flagChangeImages = 0;
+        } else {
+            i1.className = "ChangeZi3";
+            i3.className = "ChangeZi1";
+            flagChangeImages = 1;
+        }
+    }
+    </script>
+
+</html>

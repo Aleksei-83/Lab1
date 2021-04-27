@@ -1,0 +1,20 @@
+.mainButton {
+  color : black; 
+  font-weight: bold; 
+  border: 1px solid  black;
+  background: rgb(43, 201, 140);
+  width: 200px;
+  -webkit-border-radius: 15px; /* Закругление кнопок */
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 20px;
+}
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  

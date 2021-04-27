@@ -1,0 +1,167 @@
+body {
+    background-image: url(123.jpg);
+}
+
+.ChangeZi1
+{
+    z-index: 6;
+}
+
+.ChangeZi3
+{
+    z-index: 4;
+}
+
+.mainButton {
+    color : black; 
+    font-weight: bold; 
+    border: 1px solid  black;
+    background: rgb(43, 201, 140);
+    width: 100px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.OutH1 {
+    font-style:italic;
+    color :aquamarine;
+    text-align: center;
+    margin: 10px;
+}
+
+.OverH1 {
+    font-style: italic;
+    color: rgb(253, 54, 54);
+    text-align: center;
+    margin: 10px;
+}
+
+#block { 
+    text-indent: 1.5cm;
+    font-size:larger;
+    color:  rgb(43, 201, 140);
+    text-shadow: rgb(0, 0, 0) 0 0 5px;
+    position: absolute;
+    z-index: 1;
+    margin: 10px;
+}
+
+.P1Over {
+    color: rgb(52, 172, 22);
+    text-shadow: rgb(0, 0, 0) 0 0 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.formatP2 {
+    z-index: 1;
+    color: rgb(253, 54, 54);
+    text-indent: 2.5cm;
+    margin-left: 15px;
+    padding: 5px 10px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.P3Over {
+    position: absolute;
+    z-index: 2;
+    background-color: #000000;
+    color: #ebc82e;
+    top:235px;
+    width: 1200px;
+    text-align: center;
+    left: 170px;
+}
+
+.P3Out {
+    position: absolute;
+    z-index: 2;
+    background-color: #f8f8f8;
+    color: #ff0808;
+    top:300px;
+}
+
+#table {
+    position: relative;
+    top:270px;
+    left:10px;
+    padding: 0px;
+    margin: 20px;
+    z-index: 3;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 30px;
+}
+
+.chet {
+    background-color: rgb(253, 54, 54);
+}
+
+.chet2 {
+    background-color: rgb(112, 80, 252);
+}
+
+.nechet {
+    background-color: rgb(43, 201, 140);
+}
+
+.nechet2 {
+    background-color: rgb(211, 236, 67);
+}
+
+.mainButton2 { 
+    color : black; 
+    font-weight: bold; 
+    border: 1px solid  black;
+    background: rgb(43, 201, 140);
+    width: 200px;
+    -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
+    position:relative;
+    left: 1250px;
+    bottom:200px;
+}
+
+img {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.unvisible {
+    visibility: hidden;
+}
+
+#i1 {
+    position: relative;
+    left: 300px;
+    top:60px;
+    /*z-index: 4;*/
+}
+
+#i2 {
+    position: relative;
+    left:250px;
+    top:-100px;
+    z-index: 5;
+}
+
+#i3 {
+    position: relative;
+    left: 230px;
+    /*z-index: 6;*/
+}

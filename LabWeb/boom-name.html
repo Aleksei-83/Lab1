@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "Ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 7. Antokhin Aleksei</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+  <div id="buttons">
+    <input id="window" class="mainButton" type="button" value="Window" OnClick="Window();"> <br>
+    <input id="navigator" class="mainButton" type="button" value="Navigator" OnClick="Navigator();"> <br>
+    <input id="location" class="mainButton" type="button" value="Location" OnClick="Location();"> <br>
+    <input id="screen" class="mainButton" type="button" value="Screen" OnClick="Screen();">
+    <h2 onMouseOver="OverH2()" onMouseOut="OutH2()">Test10(only Internet Explorer)</h1>
+  </div>
+  </body>
+
+   <script type="text/javascript">
+  let appName = navigator.appName;
+  let appVersion = navigator.appVersion;
+  let width = screen.width;
+  let height = screen.height;
+  let depth = screen.colorDepth;
+  let flagNavigator = true;
+  let flagScreen = true;
+  window.status = "Начало работы";
+
+  let h1 = document.createElement('h1');
+  h1.innerHTML = 'Документ' + " (Последнее изменение: " + document.lastModified + ")";
+  buttons.before(h1);
+
+  function OverH2()
+  {
+    window.status = "Читай текст!"
+  }
+  function OutH2()
+  {
+    window.status = "Продолжение работы"
+  }
+
+  function Navigator() {
+    if (flagNavigator) {
+  let browser = document.createElement('a');
+  browser.innerHTML = "Браузер: " + appName + "<br> Версия: " + appVersion;
+  h1.after(browser);
+  flagNavigator = false;
+  }
+  }
+  function Location() {
+  let user = prompt("Введите имя");
+  alert("Имя пользователя: " + user + " Адрес документа: " + location.href);
+  }
+
+  function Window() {
+    alert(window.status);
+    window.status = "Продолжение следует";
+  }
+function Screen() {
+  if (flagScreen) {
+    let screen = document.createElement('a');
+    screen.innerHTML = "Данные об экране: " + "<br>" +
+    "Ширина: " + width + "<br>" +
+    "Длина: " + height + "<br>" +
+    "Глубина цвета: " + depth;
+    buttons.after(screen);
+    flagScreen = false;
+  }
+
+  alert("Данные об экране: " + "\n" +
+    "Ширина: " + screen.width + "\n" +
+    "Длина: " + screen.height + "\n" +
+    "Глубина цвета: " + screen.colorDepth);
+  }
+
+  </script>
+</html>

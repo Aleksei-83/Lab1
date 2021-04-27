@@ -1,0 +1,174 @@
+body {
+    background-image: url(123.jpg);
+}
+
+.mainButton {
+    color :  black;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    width: 100px;
+    border: 1px solid  black;
+    background: rgb(43, 201, 140);
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.mainButton2 {
+    color :  black;
+    font-weight: bold;
+    margin: 10px;
+    margin-right: 50px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    background:  rgb(43, 201, 140);
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.OutH1 {
+    font-style:italic;
+    color :aquamarine;
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.OverH1 {
+    font-style: italic;
+    color: rgb(253, 54, 54);
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+#block { 
+    font-size:larger;
+    color:  rgb(43, 201, 140);
+    text-shadow: rgb(0, 0, 0) 0 0 5px;
+    position: absolute;
+    z-index: 1;
+    padding: 0px;
+    margin: 0 70px 5px 40px;
+}
+ 
+.par1Over {
+    padding: 0px;
+    margin: 0 70px 10px 50px;
+    color: rgb(124, 0, 0);
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.formatPar2 {
+    z-index: 1;
+    color: rgb(253, 54, 54);
+    text-indent: 2.5cm;
+    margin-left: 40px;
+    padding-left: 1.5cm;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+#par3 {
+    position: relative;
+    z-index: 2;
+    padding: 7px;
+    background-color: #6b0000;
+}
+
+.par3Out {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffc4c4;
+    margin: 180px 70px 60px 40px;
+}
+
+.par3Over {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background-color: #ff8888;
+    color: #8d0000;
+    margin: 125px 70px 60px 40px;
+}
+ 
+#table {
+    position: relative;
+    padding: 0px;
+    margin: 50px 70px 30px 40px;
+    z-index: 3;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 30px;
+}
+
+.chet {
+    background-color: rgb(253, 54, 54);
+}
+
+.chet2 {
+    background-color: rgb(112, 80, 252);
+}
+
+.nechet {
+    background-color: rgb(43, 201, 140);
+}
+
+.nechet2 {
+    background-color: rgb(211, 236, 67);
+}
+
+img {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.pic {
+    margin: 10px;
+    margin-bottom: 500px;
+    margin-left: 40px;
+}
+
+.unvisible {
+    visibility: hidden;
+}
+
+#y1 {
+    position: relative;
+    float: left;
+    z-index: 4;
+}
+
+#y2 {
+    position: relative;
+    float: left;
+    left: -30px;
+    bottom: -30px;
+    z-index: 5;
+}
+
+#y3 {
+    position: relative;
+    float: left;
+    left: -60px;
+    bottom: -90px;
+    z-index: 6;
+}

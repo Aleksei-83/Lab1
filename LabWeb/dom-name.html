@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="utf-8">
+    <title>Lab 7. Antokhin-Aleksei</title>
+    <link rel="stylesheet" href="styles/dom.css">
+</head>
+<body>
+    <div id="buttons" align="right">
+        <input id="window" class="mainButton" type="button" value="Format" OnClick="Format();"> <br>
+        <input id="navigator" class="mainButton" type="button" value="Cancel" OnClick="Cancel();"> <br>
+    </div>
+    <h1 class="OutH1" onMouseOver="this.className='OverH1'" onMouseOut="this.className='OutH1'">Ход Королевы</h1>
+    <div id="block">
+        <p id="par1" class="blockParagraphs" onMouseOver="changeP1Over()" onMouseOut="changeP1Out()">
+            «Ход королевы» — американский драматический мини-сериал, основанный на одноимённом романе Уолтера Тевиса. Создан Скоттом Фрэнком и Алланом Скоттом по заказу Netflix. Премьера на Netflix состоялась 23 октября 2020 года..
+        </p>
+        <p id="par2" class="blockParagraphs">
+            «Ход королевы» рассказывает историю шахматного вундеркинда-сироты Бет Хармон, которая стремится стать величайшей шахматисткой мира, но при этом борется с эмоциональными проблемами, а также с наркотической и алкогольной зависимостью. Действие сериала, названного в оригинале в честь шахматного дебюта, начинается в середине 1950-х годов и продолжается до 1960-x.
+        </p>
+    </div>
+    <div id="par3" class="par3Out" onMouseOver="changePar3Over()" onMouseOut="changePar3Out()">
+        <p>
+            Сериал завоевал две премии «Золотой глобус», в номинациях «Лучший мини-сериал или телефильм» и «Лучшая актриса в мини-сериале или телефильме» (Тейлор-Джой). Тейлор-Джой также выиграла премию «Выбор телевизионных критиков» в категории «Лучшая актриса в телефильме или мини-сериале» и удостоилась номинации на премию Гильдии киноактёров США за лучшую женскую роль в телефильме или мини-сериале.
+        </p>
+    </div>
+ 
+<div id="table">
+        <table>
+            <tr>
+                <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+                <td class="chet" onMouseOver="this.className='chet2'" onMouseOut="this.className='chet'"></td>
+                <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+            </tr>
+            <tr>
+                <td class="chet" onMouseOver="this.className='chet2'" onMouseOut="this.className='chet'"></td>
+                <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+                <td class="chet" onMouseOver="this.className='chet2'" onMouseOut="this.className='chet'"></td>
+            </tr>
+            <tr>
+                <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+                <td class="chet" onMouseOver="this.className='chet2'" onMouseOut="this.className='chet'"></td>
+                <td class="nechet" onMouseOver="this.className='nechet2'" onMouseOut="this.className='nechet'"></td>
+        </table>
+    </div>
+    <div class="pic">
+        <img id="y1" src="Poster.jpg">
+        <img id="y2" class="visible" OnClick="unvisible()" src="2.jpg">
+        <img id="y3" src="1.jpg">
+        <div id="buttons" align="right">
+            <input id="unvisible" class="mainButton2" type="button" value="Невидимый средний слой" OnClick="unvisible();"> <br>
+            <input id="visible" class="mainButton2" type="button" value="Видимый средний слой" OnClick="visible();"> <br>
+            <input id="navigator" class="mainButton2" type="button" value="Перестановка 1 и 3 слой " OnClick="changePic();"> <br>
+        </div>
+    </div>
+</body>
+ 
+<script type="text/javascript">
+    let flagChangePic = 1;
+    function changePic() {
+        if (flagChangePic) {
+            y1.src = '1.jpg';
+            y3.src = 'Poster.jpg';
+            flagChangePic = 0;
+        } else {
+            y1.src = 'Poster.jpg';
+            y3.src = '1.jpg';
+            flagChangePic = 1;
+        }
+    }
+    function unvisible() {
+        y2.className = "unvisible";
+    }
+    function visible() {
+        y2.className = "visible";
+    }
+    function changeP1Over() {
+        par1.className = 'par1Over';
+    }
+    function changeP1Out() {
+        par1.className = 'par1Out';
+    }
+    function Format() {
+        par2.className = 'formatPar2';
+    }
+    function Cancel() {
+        par2.className = 'blockParagraphs';
+    }
+    function changePar3Over() {
+        par3.className = 'par3Over';
+    }
+    function changePar3Out() {
+        par3.className = 'par3Out';
+    }
+</script>
+</html>
